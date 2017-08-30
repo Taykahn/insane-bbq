@@ -1,0 +1,16 @@
+/* Globals ----------- */
+body {
+	min-width:320px;
+	line-height:20px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@media ( min-width: 320px ) {
+	body {
+		margin-top: 0px;
+	}
+}
+
+
+
