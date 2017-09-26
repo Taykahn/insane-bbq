@@ -3,34 +3,51 @@
  * Events
  */
 
-get_header(); ?>
+get_header(); 
 
-	<div class="container">
+global $post;
 
-		<div class="row">
+$post_id = $post->ID;
 
-			<div class="col-md-12">
+?>
 
-				<?php if ( have_posts() ) : ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+<div class="container">
 
-						<div class="page-header">
+	<div class="row" id="events-page">
 
-							<h1><?php the_title(); ?></h1>
+		<div class="col-md-12">
 
-						</div><!-- end page-header -->
+			<div class="parallax" style="background-image: url( '<?php the_field( 'event_pg_bkgd_img', $post_id ); ?>' )" />
 
-						<?php the_content(); ?>
+			<div class="event-pg-content">
+
+				<h2><?php the_title(); ?></h2>
+
+				<?php if( have_rows('events_content') ): ?>
+
+					<?php while ( have_rows('events_content') ) : the_row(); ?>
+
+						<h3><?php the_sub_field('event_date'); ?></h3>
+
+						<h3><?php the_sub_field('event_venue'); ?></h3>
+
+						<h3><?php the_sub_field('event_location'); ?></h3>
+
+						<p><?php the_sub_field('event_description'); ?></p><hr>
 
 					<?php endwhile; ?>
 
 				<?php endif; ?>
 
-			</div><!-- end col-md-9 -->
+			</div><!-- end event-pg-content -->
 
-		</div><!-- end row -->
+		</div><!-- end col-md-12 -->
 
-	</div><!-- end container -->
+	</div><!-- end row -->
+
+</div><!-- end container -->
+
+</div>
 
 <?php get_footer(); ?>

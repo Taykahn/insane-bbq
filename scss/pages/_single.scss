@@ -1,0 +1,21 @@
+.sgl-pg-img {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.sgl-pg-content-else {
+	p {
+		margin-left: 6em;
+		margin-right: 6em;
+	}
+}
+
+@media ( min-width: 320px ) {
+	.sgl-pg-img {
+		img {
+			width: 100%;
+		}
+	}
+}

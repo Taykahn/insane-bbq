@@ -6,6 +6,7 @@
 //Require included files
 require_once STYLESHEETPATH . '/includes/mbc-theme-class.php';
 require_once STYLESHEETPATH . '/includes/post-types.php';
+require_once STYLESHEETPATH . '/includes/mbc-hooks.php';
 
 /**
  * Load theme styles and scripts
@@ -86,6 +87,8 @@ if( function_exists('acf_add_options_page') ) {
 	));
 }
 
+ add_post_type_support( 'page', 'excerpt' );
+
 /**
  * add widgets
  */
@@ -108,6 +111,24 @@ create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the hom
 create_widget( 'Front Page Center', 'front-center', 'Displays in the center of the homepage' );
 create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the homepage' );
 create_widget( 'Contact Page Right', 'contact-right', 'Displays on the side of contact page with a sidebar.' );
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+register_sidebar( array(
+	'name'          => 'Home right sidebar',
+	'id'            => 'home_right_1',
+	'before_widget' => '<div>',
+	'after_widget'  => '</div>',
+	'before_title'  => '<h2 class="rounded">',
+	'after_title'   => '</h2>',
+) );
+}
+
+add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 
 add_theme_support( 'post-thumbnails' );

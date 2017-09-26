@@ -1,19 +1,15 @@
-.banner {
-	min-height: 500px;
-}
 
-.banner-2 {
-	min-height: -webkit-fill-available; 
+@media ( min-width: 768px ) {
+	#mb-img {
+		display: none;
+	}
+	.banner {
+	height: 450px;
+}
 }
 
 @media ( max-width: 1149px ) {
 	#dktb-img {
 		min-height: 268px;
-	}
-}
-
-@media ( min-width: 768px ) {
-	#mb-img {
-		display: none;
 	}
 }

@@ -1,0 +1,48 @@
+
+.menu-title {
+	h1 {
+		text-align: center;
+		font-size: 40px;
+	}
+}
+
+.appetizers-section,
+.entrees-section,
+.sides-section,
+.desserts-section {
+	h2 {
+		border-bottom: solid;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 30px;
+	}
+	img {
+		max-width: 200px;
+		max-height: 200px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+@media ( min-width: 320px ) {
+	.menu-title {
+		h1 {
+			margin-top: 2em;
+		}
+	}
+}
+
+@media ( min-width: 768px ) {
+	.menu-title {
+		h1 {
+			margin-top: 2em;
+		}
+	}
+	#pg-section {
+		height: 11em;
+		float: right;
+		padding-top: 3em;
+		padding-right: 6em;
+	}
+}

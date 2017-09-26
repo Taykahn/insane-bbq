@@ -1,0 +1,40 @@
+.contact-content {
+	display: -webkit-box;
+	text-align: center;
+}
+
+.contact-page-img {
+	p {
+		line-height: 2em;
+	}
+}
+
+@media ( min-width: 320px ) {
+	.contact-content {
+		margin-top: 2em;
+		margin-bottom: 5em;
+		padding-left: 14px;
+		p {
+			display: inherit;
+		}
+		img {
+			margin-left: 3em;
+		}
+	}
+}
+
+@media ( min-width: 768px ) {
+	.cnt-pg {
+		.col-md-6 {
+			min-height: 30em;
+		}
+	}
+	.contact-content {
+		margin-top: 5em;
+		p {
+			display: inline-block;
+			vertical-align: text-bottom;
+			padding-right: 4em;
+		}
+	}
+}

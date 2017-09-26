@@ -5,6 +5,8 @@
 
 get_header(); ?>
 
+<section id="page">
+
 	<div class="container">
 
 		<div class="row">
@@ -42,5 +44,7 @@ get_header(); ?>
 		</div><!-- end row -->
 
 	</div><!-- end container -->
+
+</section><!-- end page -->
 
 <?php get_footer(); ?>

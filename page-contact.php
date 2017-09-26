@@ -1,6 +1,6 @@
 <?php 
 /**
- * Single
+ * Template Name: Contact Page
  */
 
 get_header(); ?>
@@ -21,37 +21,33 @@ get_header(); ?>
 
 						</div><!-- end page-header -->
 
-						<?php if ( has_post_thumbnail() ) { ?>
+						<div class="cnt-pg">
 
 							<div class="col-md-6">
 
-								<div class="sgl-pg-img">
+								<div class="contact-page-img">
 
 									<?php the_post_thumbnail(); ?>
 
-								</div><!-- end sgl-pg-img -->
+									<h2>General Info:</h2>
 
-							</div><!-- end col-md-6 -->
+									<p><?php the_excerpt(); ?></p>
+
+								</div><!-- end page-img -->
+
+							</div><!-- col-md-6 -->
 
 							<div class="col-md-6">
 
-								<p><?php the_content(); ?></p>
-
-							</div><!-- end col-md-6 -->
-
-						<?php } else { ?>
-
-							<div class="col-md-12">
-
-								<div class="sgl-pg-content-else">
+								<div class="contact-content">
 
 									<p><?php the_content(); ?></p>
 
-								</div><!-- end sgl-pg-content-else -->
+								</div><!-- end contact-content -->
 
-							</div><!-- end col-md-12 -->
+							</div><!-- end col-md-6 -->
 
-						<?php } ?>
+						</div>
 
 					<?php endwhile; ?>
 

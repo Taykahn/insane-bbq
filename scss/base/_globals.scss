@@ -2,8 +2,47 @@
 body {
 	min-width:320px;
 	line-height:20px;
+	font-family: 'Asap', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+#page {
+	min-height: -webkit-fill-available;
+}
+
+.row {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+h1, h2, h4 {
+	font-family: serif;
+}
+
+.parallax { 
+	min-height: 500px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.blog-navigation {
+	ul {
+	display: -webkit-inline-box;
+	padding: 10px;
+	}
+	li {
+		padding-right: 5px;
+		padding-left: 5px;
+		list-style: none;
+	}
 }
 
 @media ( min-width: 320px ) {
@@ -11,6 +50,3 @@ body {
 		margin-top: 0px;
 	}
 }
-
-
-
