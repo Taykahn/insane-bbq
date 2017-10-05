@@ -26,7 +26,7 @@ $blog = new WP_Query( $query );
 
 ?>
 
-<section class="two-column row max no-pad">
+<section id="nav-change" class="two-column row max no-pad">
 
 	<div class="inner-wrapper container">
 

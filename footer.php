@@ -8,11 +8,27 @@
 
 	<footer>
 
-	<div class="copyright">
+		<div class="banner-navbar" style="background: url( '<?php the_field( 'footer_bkgd', 'option' ) ?>' ) 50%/cover no-repeat;">
 
-		<p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
+		<div class="section-1 container-fluid">
 
-	</div><!-- end copyright -->
+			<div id="footer-nav">
+
+				<?php include( 'includes/footer-navbar.php' ); ?>
+
+			</div><!-- end footer-nav -->
+
+		</div>
+
+		<div class="section-2 container-fluid">
+
+			<div class="copyright">
+
+				<p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
+
+			</div><!-- end copyright -->
+
+		</div>
 
 	</footer>
 

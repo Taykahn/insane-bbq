@@ -23,7 +23,7 @@
 
 	<!-- Google Fonts -->
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Asap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
 
 	<?php wp_head() ?>
 
@@ -40,33 +40,9 @@
 
 <body <?php body_class( $classes ) ?>>
 
-<?php if ( is_front_page() ) { ?>
-
-<?php } else { ?>
-
-	<?php include ( 'includes/navbar.php' ); ?>
-
-<?php } ?>
-
 <header>
 
-	<div class="header">
-
-		<div class="row">
-
-			<?php if ( is_front_page() ) { ?>
-
-				<div class="banner no-pad" id="dktb-img" style="background: url( '<?php the_field( 'dktb_header_img', 'option' ); ?>' ) 50%/cover no-repeat;">
-
-				<?php } else { ?>
-
-			<?php } ?>
-
-			</div><!-- end site-name -->
-
-		</div><!-- end row -->
-
-	</div><!-- end header -->
+	<?php include ( 'includes/navbar.php' ); ?>
 
 </header>
 

@@ -1,6 +1,6 @@
 <?php 
 /**
- * Events
+ * Template Name: Events
  */
 
 get_header(); 
@@ -12,7 +12,7 @@ $post_id = $post->ID;
 ?>
 
 
-<div class="container">
+<div id="nav-change" class="container">
 
 	<div class="row" id="events-page">
 
@@ -47,7 +47,5 @@ $post_id = $post->ID;
 	</div><!-- end row -->
 
 </div><!-- end container -->
-
-</div>
 
 <?php get_footer(); ?>

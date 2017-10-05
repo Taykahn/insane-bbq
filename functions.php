@@ -54,11 +54,13 @@ add_theme_support( 'menus' );
 function register_theme_menus() {
 	register_nav_menus(
 		array(
-			'header-menu'	=> __( 'Header Menu' )
+			'header-menu'	=> __( 'Header Menu' ),
+			'footer-menu'	=> __( 'Footer Menu' )
 		)
 	);
 }
 add_action( 'init', 'register_theme_menus' );
+
 
 /**
  * Add Options Page ACF 
@@ -72,6 +74,18 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Navbar Background Settings',
+		'menu_title'	=> 'Navbar-Background',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Navbar Settings',
+		'menu_title'	=> 'Navbar-Logo',
+		'parent_slug'	=> 'theme-general-settings',
 	));
 
 	acf_add_options_sub_page(array(

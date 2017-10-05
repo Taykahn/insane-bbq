@@ -11,7 +11,7 @@ $post_id = $post->ID;
 
 ?>
 
-	<div class="container">
+	<div id="nav-change" class="container">
 
 		<div class="row">
 
@@ -37,7 +37,7 @@ $post_id = $post->ID;
 
 									<div class="col-md-6">
 
-										<h4><?php the_sub_field('app_title'); ?></h4>
+										<h3><?php the_sub_field('app_title'); ?></h3>
 
 										<p><?php the_sub_field('app_description'); ?></p>
 

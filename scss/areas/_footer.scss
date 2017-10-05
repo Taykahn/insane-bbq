@@ -1,11 +1,14 @@
-footer {
-	background-color: #908a75;
-}
-
 .copyright {
 	p {
 		text-align: center;
 		padding: 2em;
 		margin-bottom: 0px;
+		color: $btn-white;
+	}
+}
+
+@media ( min-width: 768px ) {
+	footer {
+		margin-top: -10px;
 	}
 }

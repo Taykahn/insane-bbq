@@ -9,201 +9,173 @@ global $post;
 
 $post_id = $post->ID; ?>
 
-<section class="row no-pad container-fluid" id="flip-card">
+<?php include( 'includes/mobile-header.php' ); ?>
 
-	<div class="row">
+	<section class="section-one no-pad container-fluid">
 
-		<div class="col-md-12">
+		<div class="row">
 
-			<?php include ( 'includes/navbar.php' ); ?>
+			<div class="container-fluid">
 
-			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="col-md-8 col-sm-8 container-fluid">
 
-				<div class="flipper">
+					<div class="banner" style="background: url( '<?php the_field( 'sec_ra_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
-					<div class="front">
+						<div id="fs-sec-one-a">
 
-						<div class="banner-2">
+							<h2><?php the_field( 'sec_ra_title', $post_id ); ?></h2>
 
-							<img src="<?php the_field( 'mb_header_img', 'option' ); ?>" />
+							<p><?php the_field( 'sec_ra_content', $post_id ); ?></p>
 
-						</div><!-- end banner-2 -->
+							<div id="button" class="button-1">
 
-					</div><!-- end front -->
+								<a href="http://localhost:3000/catering/"<button type="button" class="btn btn-red">Learn More</button></a>
 
-					<div class="back">
+							</div><!-- end button -->
 
-						<div class="bk-card-logo">
+						</div><!-- end fs-sec-one-a -->
 
-							<img src="<?php the_field( 'logo', $post_id ); ?>" />
+					</div><!-- end banner -->
 
-						</div><!-- end bk-card-logo -->
+				</div><!-- end col-md-8 -->
 
-						<div class="flip-content">
+				<div id="nav-change" class="col-md-4 col-sm-4 container-fluid">
 
-							<p><?php the_field( 'bk_header_content', $post_id ); ?></p>
+					<div class="banner" style="background: url( '<?php the_field( 'sec_lb_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
-						</div><!-- end flip-content -->
+						<div class="sec-one-b-content">
 
-					</div><!-- end back -->
+							<h2><?php the_field( 'sec_lb_title', $post_id ); ?></h2>
 
-				</div><!-- end flipper -->
+							<p><?php the_field( 'sec_lb_content', $post_id ); ?></p>
 
-			</div><!-- end flip-container -->
+							<div id="button" class="button-2">
 
-		</div><!-- end col-md-12 -->
+								<a href="http://localhost:3000/menu/"<button type="button" class="btn btn-red">Our Menu</button></a>
 
-	</div><!-- end row -->
+							</div><!-- end button -->
 
-</section><!-- end two-column row no-pad container-fluid -->
+						</div><!-- end sec-one-b-content -->
 
-<div id="boxes">
+					</div><!-- end banner -->
 
-<section class="two-column row no-pad container-fluid">
+				</div><!-- end col-md-4 -->
 
-	<div class="row">
+			</div><!-- end col-md-12 -->
 
-		<div class="col-md-12">
+		</div><!-- end row -->
 
-			<div class="col-md-6">
+	</section><!-- end section-one row no-pad container-fluid -->
 
-				<div id="about-box">
+	<section class="section-two no-pad container-fluid">
 
-					<div id="about-img" style="background: url( '<?php the_field( 'about_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+		<div class="row">
 
-						<div class="fp-titles" style="z-index: 2">
+			<div class="container-fluid">
 
-							<a href="http://insane-bbq.dev/about-us/"><button type="button" class="btn btn-md"><h2><?php the_field('about_title', $post_id ); ?></h2></button></a>
+			<div class="parallax" style="background-image: url('<?php the_field( 'sec_five_bkgd_img', $post_id ) ?>')">
 
-						</div><!-- end fp-titles -->
+			<div class="col-md-4 col-sm-4 container-fluid">
 
-					</div><!-- end about-img -->
+				<div class="fp-col-one">
 
-				</div><!-- end about-box -->
+					<img src="<?php the_field( 'col_1_img', $post_id ); ?>" />
 
-			</div><!-- end col-md-6 -->
+					<h2><?php the_field( 'col_1_title', $post_id ); ?></h2>
 
-			<div class="col-md-6">
+					<p><?php the_field( 'col_1_content', $post_id ); ?></p>
 
-				<div id="events-box">
+				</div><!-- end front-page-column-one -->
 
-					<div id="events-img" style="background: url( '<?php the_field( 'events_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+			</div><!-- end col-md-4 -->
 
-						<div class="fp-titles">
+			<div class="col-md-4 col-sm-4 container-fluid">
 
-							<a href="http://insane-bbq.dev/events/"><button type="button" class="btn btn-md"><h2><?php the_field('events_title', $post_id ); ?></h2></a></button>
+				<div class="fp-col-two">
 
-						</div><!-- end fp-titles -->
+					<img src="<?php the_field( 'col_2_img', $post_id ); ?>" />
 
-					</div><!-- end events-img -->
+					<h2><?php the_field( 'col_2_title', $post_id ); ?></h2>
 
-				</div><!-- end events-box -->
+					<p><?php the_field( 'col_2_content', $post_id ); ?></p>
 
-			</div><!-- end col-md-6 -->
+				</div><!-- end front-page-column-two -->
 
-		</div><!-- end col-md-12 -->
+			</div><!-- end col-md-4 -->
 
-	</div><!-- end row -->
+			<div class="col-md-4 col-sm-4 container-fluid">
 
-</section><!-- end row no-pad container-fluid -->
+				<div class="fp-col-three">
 
-<section class="two-column row no-pad container-fluid">
+					<img src="<?php the_field( 'col_3_img', $post_id ); ?>" />
 
-	<div class="row">
+					<h2><?php the_field( 'col_3_title', $post_id ); ?></h2>
 
-		<div class="col-md-12">
+					<p><?php the_field( 'col_3_content', $post_id ); ?></p>
 
-			<div class="col-md-6">
+				</div><!-- end front-page-column-three -->
 
-				<div id="menu-box">
+			</div><!-- end col-md-4 -->
 
-					<div id="menu-img" style="background: url( '<?php the_field( 'menu_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+		</div><!-- end row -->
 
-						<div class="fp-titles">
+	</div><!-- end col-md-12 -->
 
-							<a href="http://insane-bbq.dev/menu/"><button type="button" class="btn btn-md"><h2><?php the_field('menu_title', $post_id ); ?></h2></a></button>
+	</section><!-- end section-five container-fluid -->
 
-						</div><!-- end fp-titles -->
+	<section class="section-three no-pad container-fluid">
 
-					</div><!-- end menu-img -->
+		<div class="row">
 
-				</div><!-- end menu-box -->
+			<div class="container-fluid">
 
-			</div><!-- end col-md-6 -->
+				<div class="col-md-4 col-sm-4 container-fluid">
 
-			<div class="col-md-6">
+					<div class="banner" style="background: url( '<?php the_field( 'sec_3_lb_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
-				<div id="contact-box">
+					<div class="sec-three-a-content">
 
-					<div id="contact-img" style="background: url( '<?php the_field( 'contact_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+						<h2><?php the_field( 'sec_3_lb_title', $post_id ); ?></h2>
 
-						<div class="fp-titles">
+						<p><?php the_field( 'sec_3_lb_content', $post_id ); ?></p>
 
-							<a href="http://insane-bbq.dev/contact-us/"><button type="button" class="btn btn-md"><h2><?php the_field('contact_title', $post_id ); ?></h2></a></button>
+						<div id="button" class="button-3">
 
-						</div><!-- end fp-titles -->
+							<a href="http://localhost:3000/event/"<button type="button" class="btn btn-red">Where We Are</button></a>
 
-					</div><!-- end contact-img -->
+						</div><!-- end button -->
 
-				</div><!-- end contact-box -->
+					</div><!-- end sec-three-a-content -->
 
-			</div><!-- end col-md-6 -->
+				</div><!-- end col-md-4 -->
 
-		</div><!-- end col-md-12 -->
+			</div><!-- end container-fluid -->
 
-	</div><!-- end row -->
+			<div class="col-md-8 col-sm-8 container-fluid">
 
-</section><!-- end row no-pad container-fluid -->
+				<div class="banner" style="background: url( '<?php the_field( 'sec_3_ra_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
-<section class="two-column row no-pad container-fluid">
+					<div class="sec-three-b-content">
 
-	<div class="row">
+						<h2><?php the_field( 'sec_3_ra_title', $post_id ); ?></h2>
 
-		<div class="col-md-12">
+						<p><?php the_field( 'sec_3_ra_content', $post_id ); ?></p>
 
-			<div class="col-md-6">
+						<div id="button" class="button-4">
 
-				<div id="product-box">
+							<a href="http://localhost:3000/shop/"<button type="button" class="btn btn-red">The Store</button></a>
 
-					<div id="product-img" style="background: url( '<?php the_field( 'product_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+						</div><!-- end button -->
 
-						<div class="fp-titles">
+					</div><!-- end sec-three-b-content --> 
 
-							<a href="http://insane-bbq.dev/products/"><button type="button" class="btn btn-md"><h2><?php the_field('product_title', $post_id ); ?></h2></a></button>
+				</div><!-- end parallax -->
 
-						</div><!-- end fp-titles -->
+			</div><!-- end col-md-8 -->
 
-					</div><!-- end product-img -->
+		</div><!-- end row -->
 
-				</div><!-- end product-box -->
-
-			</div><!-- end col-md-6 -->
-
-			<div class="col-md-6">
-
-				<div id="blog-box">
-
-					<div id="blog-img" style="background: url( '<?php the_field( 'blog_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
-
-						<div class="fp-titles">
-
-							<a href="http://insane-bbq.dev/blog/"><button type="button" class="btn btn-md"><h2><?php the_field('blog_title', $post_id ); ?></h2></a></button>
-
-						</div><!-- end fp-titles -->
-
-					</div><!-- end blog-img -->
-
-				</div><!-- end blog-box -->
-
-			</div><!-- end col-md-6 -->
-
-		</div><!-- end col-md-12 -->
-
-	</div><!-- end row -->
-
-</section><!-- end row no-pad container-fluid -->
-
-</div><!-- end boxes -->
+	</section><!-- end sectio-three row no-pad container-fluid -->
 
 <?php get_footer(); ?>
 
