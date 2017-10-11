@@ -10,25 +10,41 @@
 
 		<div class="banner-navbar" style="background: url( '<?php the_field( 'footer_bkgd', 'option' ) ?>' ) 50%/cover no-repeat;">
 
-		<div class="section-1 container-fluid">
+			<div class="section-1 container-fluid">
 
-			<div id="footer-nav">
+				<div class="col-md-6">
 
-				<?php include( 'includes/footer-navbar.php' ); ?>
+					<div id="footer-nav">
 
-			</div><!-- end footer-nav -->
+						<?php include( 'includes/footer-navbar.php' ); ?>
 
-		</div>
+					</div><!-- end footer-nav -->
 
-		<div class="section-2 container-fluid">
+				</div><!-- end col-md-6 -->
 
-			<div class="copyright">
+				<div class="col-md-6">
 
-				<p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
+					<div id="slogan">
 
-			</div><!-- end copyright -->
+						<p>Remember: If it's crazy good, it's Insane Bar-B-Que!</p>
 
-		</div>
+					</div><!-- end slogan -->
+
+				</div><!-- end col-md-6 -->
+
+			</div><!-- end section-1 -->
+
+			<div class="section-2 container-fluid">
+
+				<div class="copyright">
+
+					<p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
+
+				</div><!-- end copyright -->
+
+			</div><!-- end section-2 -->
+
+		</div><!-- end banner-navbar -->
 
 	</footer>
 

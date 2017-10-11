@@ -95,6 +95,9 @@ body {
 h1, h2, h4 {
   font-family: Special Elite; }
 
+ul {
+  list-style: none; }
+
 .parallax {
   min-height: 500px;
   background-attachment: fixed;
@@ -255,7 +258,9 @@ h1, h2, h4 {
   display: inline-block;
   float: none; }
 
-.navbar-default .navbar-toggle:hover, .navbar-default {
+.navbar-default
+.navbar-toggle:hover,
+.navbar-default {
   background-color: rgba(221, 221, 221, 0); }
 
 .navbar-collapse.in {
@@ -420,6 +425,18 @@ h1, h2, h4 {
     .section-1 {
       margin-left: 2em; } }
 
+#slogan p {
+  margin-top: 48px;
+  color: #d2cece;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 6px #000;
+  letter-spacing: 2px;
+  word-spacing: 1px; }
+  @media (min-width: 769px) {
+    #slogan p {
+      margin-left: 1em; } }
+
 .bottomMenu {
   display: block;
   width: 100%; }
@@ -438,7 +455,7 @@ h1, h2, h4 {
       .bottomMenu ul li a {
         color: #d2cece;
         font-size: 20px;
-        letter-spacing: 1px;
+        letter-spacing: 3px;
         line-height: 15px;
         text-decoration: none;
         font-weight: normal;
@@ -452,7 +469,8 @@ h1, h2, h4 {
   text-align: center;
   padding: 2em;
   margin-bottom: 0px;
-  color: #fafafa; }
+  color: #d2cece;
+  text-shadow: 0px 0px 6px #000; }
 
 @media (min-width: 768px) {
   footer {
@@ -660,8 +678,9 @@ h1, h2, h4 {
 .sec-three-a-content h2 {
   padding-top: 6em;
   text-align: center;
+  color: #ececec;
   letter-spacing: 3px;
-  text-shadow: 0px 0px 9px #5f5858; }
+  text-shadow: 0px 0px 6px #000; }
 
 .sec-three-b-content h1, .sec-three-b-content h2, .sec-three-b-content p {
   color: #ececec;

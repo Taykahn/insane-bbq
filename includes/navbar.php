@@ -10,12 +10,6 @@
 
 			</div><!-- end logo -->
 
-			<div class="slogan">
-
-				
-
-			</div><!-- end slogan -->
-
 			<button type="button" id="nav-icon1" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 
 				<span></span>

@@ -12,7 +12,7 @@ $post_id = $post->ID;
 ?>
 
 
-<div id="nav-change" class="container">
+<div id="nav-change">
 
 	<div class="row" id="events-page">
 
