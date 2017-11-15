@@ -11,85 +11,77 @@ $post_id = $post->ID; ?>
 
 <?php include( 'includes/mobile-header.php' ); ?>
 
-	<section class="section-one no-pad container-fluid">
+	<section class="section-one container-fluid">
 
-		<div class="row">
+		<div class="col-sm-8 container-fluid">
 
-			<div class="container-fluid">
+			<div class="banner" style="background: url( '<?php the_field( 'sec_ra_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
-				<div class="col-md-8 col-sm-8 container-fluid">
+				<div id="fs-sec-one-a">
 
-					<div class="banner" style="background: url( '<?php the_field( 'sec_ra_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+					<h2><?php the_field( 'sec_ra_title', $post_id ); ?></h2>
 
-						<div id="fs-sec-one-a">
+					<p><?php the_field( 'sec_ra_content', $post_id ); ?></p>
 
-							<h2><?php the_field( 'sec_ra_title', $post_id ); ?></h2>
+					<div id="button" class="button-1">
 
-							<p><?php the_field( 'sec_ra_content', $post_id ); ?></p>
+						<a href="http://localhost:3000/catering/"<button type="button" class="btn btn-red">Learn More</button></a>
 
-							<div id="button" class="button-1">
+					</div><!-- .button -->
 
-								<a href="http://localhost:3000/catering/"<button type="button" class="btn btn-red">Learn More</button></a>
+				</div><!-- .fs-sec-one-a -->
 
-							</div><!-- end button -->
+			</div><!-- .banner -->
 
-						</div><!-- end fs-sec-one-a -->
+		</div><!-- .col-sm-8 .container-fluid -->
 
-					</div><!-- end banner -->
+		<div id="nav-change" class="col-sm-4 container-fluid">
 
-				</div><!-- end col-md-8 -->
+			<div class="banner" style="background: url( '<?php the_field( 'sec_lb_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
-				<div id="nav-change" class="col-md-4 col-sm-4 container-fluid">
+				<div class="sec-one-b-content">
 
-					<div class="banner" style="background: url( '<?php the_field( 'sec_lb_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+					<h2><?php the_field( 'sec_lb_title', $post_id ); ?></h2>
 
-						<div class="sec-one-b-content">
+					<p><?php the_field( 'sec_lb_content', $post_id ); ?></p>
 
-							<h2><?php the_field( 'sec_lb_title', $post_id ); ?></h2>
+					<div id="button" class="button-2">
 
-							<p><?php the_field( 'sec_lb_content', $post_id ); ?></p>
+						<a href="http://localhost:3000/menu/"<button type="button" class="btn btn-red">Our Menu</button></a>
 
-							<div id="button" class="button-2">
+					</div><!-- .button -->
 
-								<a href="http://localhost:3000/menu/"<button type="button" class="btn btn-red">Our Menu</button></a>
+					</div><!-- .sec-one-b-content -->
 
-							</div><!-- end button -->
+				</div><!-- .banner -->
 
-						</div><!-- end sec-one-b-content -->
+			</div><!-- .col-sm-4 -->
 
-					</div><!-- end banner -->
+		</div><!-- .col-md-12 -->
 
-				</div><!-- end col-md-4 -->
-
-			</div><!-- end col-md-12 -->
-
-		</div><!-- end row -->
-
-	</section><!-- end section-one row no-pad container-fluid -->
+	</section><!-- .section-one row no-pad container-fluid -->
 
 	<section class="section-two no-pad container-fluid">
 
-		<div class="row">
-
-			<div class="container-fluid">
+		<div class="container-fluid">
 
 			<div class="parallax" style="background-image: url('<?php the_field( 'sec_five_bkgd_img', $post_id ) ?>')">
 
-			<div class="col-md-4 col-sm-4 container-fluid">
+				<div class="col-sm-4 container-fluid">
 
-				<div class="fp-col-one">
+					<div class="fp-col-one">
 
-					<img src="<?php the_field( 'col_1_img', $post_id ); ?>" />
+						<img src="<?php the_field( 'col_1_img', $post_id ); ?>" />
 
-					<h2><?php the_field( 'col_1_title', $post_id ); ?></h2>
+						<h2><?php the_field( 'col_1_title', $post_id ); ?></h2>
 
-					<p><?php the_field( 'col_1_content', $post_id ); ?></p>
+						<p><?php the_field( 'col_1_content', $post_id ); ?></p>
 
-				</div><!-- end front-page-column-one -->
+					</div><!-- .front-page-column-one -->
 
-			</div><!-- end col-md-4 -->
+				</div><!-- .col-sm-4 -->
 
-			<div class="col-md-4 col-sm-4 container-fluid">
+			<div class="col-sm-4 container-fluid">
 
 				<div class="fp-col-two">
 
@@ -101,9 +93,9 @@ $post_id = $post->ID; ?>
 
 				</div><!-- end front-page-column-two -->
 
-			</div><!-- end col-md-4 -->
+			</div><!-- .col-sm-4 -->
 
-			<div class="col-md-4 col-sm-4 container-fluid">
+			<div class="col-sm-4 container-fluid">
 
 				<div class="fp-col-three">
 
@@ -113,69 +105,61 @@ $post_id = $post->ID; ?>
 
 					<p><?php the_field( 'col_3_content', $post_id ); ?></p>
 
-				</div><!-- end front-page-column-three -->
+				</div><!-- .ront-page-column-three -->
 
-			</div><!-- end col-md-4 -->
+			</div><!-- .col-sm-4 -->
 
-		</div><!-- end row -->
+	</div><!-- .col-sm-12 -->
 
-	</div><!-- end col-md-12 -->
-
-	</section><!-- end section-five container-fluid -->
+	</section><!-- .section-five container-fluid -->
 
 	<section class="section-three no-pad container-fluid">
 
-		<div class="row">
+		<div class="col-sm-4 container-fluid">
 
-			<div class="container-fluid">
+			<div class="banner" style="background: url( '<?php the_field( 'sec_3_lb_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
-				<div class="col-md-4 col-sm-4 container-fluid">
+				<div class="sec-three-a-content">
 
-					<div class="banner" style="background: url( '<?php the_field( 'sec_3_lb_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+					<h2><?php the_field( 'sec_3_lb_title', $post_id ); ?></h2>
 
-					<div class="sec-three-a-content">
+					<p><?php the_field( 'sec_3_lb_content', $post_id ); ?></p>
 
-						<h2><?php the_field( 'sec_3_lb_title', $post_id ); ?></h2>
+					<div id="button" class="button-3">
 
-						<p><?php the_field( 'sec_3_lb_content', $post_id ); ?></p>
+						<a href="http://localhost:3000/event/"<button type="button" class="btn btn-red">Where We Are</button></a>
 
-						<div id="button" class="button-3">
+					</div><!-- .button -->
 
-							<a href="http://localhost:3000/event/"<button type="button" class="btn btn-red">Where We Are</button></a>
+				</div><!-- .sec-three-a-content -->
 
-						</div><!-- end button -->
+			</div><!-- .banner -->
 
-					</div><!-- end sec-three-a-content -->
+		</div><!-- .col-sm-4 -->
 
-				</div><!-- end col-md-4 -->
+		<div class="col-sm-8 container-fluid">
 
-			</div><!-- end container-fluid -->
+			<div class="banner" style="background: url( '<?php the_field( 'sec_3_ra_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
-			<div class="col-md-8 col-sm-8 container-fluid">
+				<div class="sec-three-b-content">
 
-				<div class="banner" style="background: url( '<?php the_field( 'sec_3_ra_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
+					<h2><?php the_field( 'sec_3_ra_title', $post_id ); ?></h2>
 
-					<div class="sec-three-b-content">
+					<p><?php the_field( 'sec_3_ra_content', $post_id ); ?></p>
 
-						<h2><?php the_field( 'sec_3_ra_title', $post_id ); ?></h2>
+					<div id="button" class="button-4">
 
-						<p><?php the_field( 'sec_3_ra_content', $post_id ); ?></p>
+						<a href="http://localhost:3000/shop/"<button type="button" class="btn btn-red">The Store</button></a>
 
-						<div id="button" class="button-4">
+					</div><!-- .button -->
 
-							<a href="http://localhost:3000/shop/"<button type="button" class="btn btn-red">The Store</button></a>
+				</div><!-- .sec-three-b-content --> 
 
-						</div><!-- end button -->
+			</div><!-- .banner -->
 
-					</div><!-- end sec-three-b-content --> 
+		</div><!-- .col-sm-8 -->
 
-				</div><!-- end parallax -->
-
-			</div><!-- end col-md-8 -->
-
-		</div><!-- end row -->
-
-	</section><!-- end sectio-three row no-pad container-fluid -->
+	</section><!-- .section-three row no-pad container-fluid -->
 
 <?php get_footer(); ?>
 

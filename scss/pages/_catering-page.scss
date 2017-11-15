@@ -1,0 +1,52 @@
+.parallax-catering { 
+	min-height: 520px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.catering-pg-title {
+	h1 {
+		margin: 0px;
+		color: #fff;
+		letter-spacing: 3px;
+		text-align: center;
+		padding-top: 3.3em;
+		font-size: 60px;
+	}
+}
+
+#catering-pg-section-two {
+	min-height: 400px;
+}
+
+.catering-bkgd-img{
+	height: 400px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+	h2, p {
+		color: $off-white;
+		text-align: center;
+		font-weight: bold;
+		text-shadow: 2px 2px 10px #000;
+	}
+
+	h2 {
+		padding-top: 5em;
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+
+	p {
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+}

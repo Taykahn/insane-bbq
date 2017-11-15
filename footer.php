@@ -2,7 +2,7 @@
 /**
  * Template Name: Footer
  */
-?>
+ ?>
 
 </main>
 
@@ -12,27 +12,37 @@
 
 			<div class="section-1 container-fluid">
 
-				<div class="col-md-6">
+				<div class="col-sm-5">
 
 					<div id="footer-nav">
 
 						<?php include( 'includes/footer-navbar.php' ); ?>
 
-					</div><!-- end footer-nav -->
+					</div><!-- .footer-nav -->
 
-				</div><!-- end col-md-6 -->
+				</div><!-- .col-sm-5 -->
 
-				<div class="col-md-6">
+				<div class="col-sm-2">
+
+					<div class="footer-logo">
+
+						<img src="<?php the_field( 'footer_logo', 'option' ); ?>" />
+
+					</div><!-- .footer-logo -->
+
+				</div><!-- .col-sm-2 -->
+
+				<div class="col-sm-5">
 
 					<div id="slogan">
 
-						<p>Remember: If it's crazy good, it's Insane Bar-B-Que!</p>
+						<p>If it's crazy good, it's Insane Bar-B-Que!</p>
 
-					</div><!-- end slogan -->
+					</div><!-- .slogan -->
 
-				</div><!-- end col-md-6 -->
+				</div><!-- .col-sm-5 -->
 
-			</div><!-- end section-1 -->
+			</div><!-- .section-1 -->
 
 			<div class="section-2 container-fluid">
 
@@ -40,11 +50,11 @@
 
 					<p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
 
-				</div><!-- end copyright -->
+				</div><!-- .copyright -->
 
-			</div><!-- end section-2 -->
+			</div><!-- .section-2 -->
 
-		</div><!-- end banner-navbar -->
+		</div><!-- .banner-navbar -->
 
 	</footer>
 

@@ -56,7 +56,7 @@ $blog = new WP_Query( $query );
 
 						</div><!-- end blog-img -->
 
-						<p><?php the_content(); ?></p>
+						<p><?php the_content(); ?></p><hr>
 
 					<?php endwhile ?>
 

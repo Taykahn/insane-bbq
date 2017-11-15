@@ -1,8 +1,13 @@
 
 #button {
+	a:hover {
+		text-transform: uppercase;
+	}
+
 	a {
 		color: $btn-white;
 		font-family: $primaryFont;
+
 	}
 	.btn-red {
 		padding: 13px 3em;
@@ -18,20 +23,24 @@
 	}
 }
 
-.button-1 {
-	text-align: center;
-	margin-top: 4em;
 
-	@media ( min-width: 768px ) {
-		text-align: left;
-		margin-top: 2em;
-		margin-left: 18px;
-	}
-}
-
+.button-1,
 .button-2, 
 .button-3,
 .button-4 {
 	text-align: center;
 	margin-top: 4em;
+}
+
+.button-1 {
+	@media ( min-width: 768px ) {
+		text-align: left;
+		margin-top: 3em;
+		margin-left: 18px;
+	}
+}
+
+.catering-btn {
+	padding-top: 45px;
+	text-align: center;
 }

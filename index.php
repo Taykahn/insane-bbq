@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-Index
+
 <section id="nav-change" class="row">
 
 	<div class="small-12 columns text-center">
