@@ -1,21 +1,31 @@
+.single-page {
+	margin-bottom: 25px;
+}
+
 .sgl-pg-img {
 	img {
+		height: 100%;
+		width: 100%;
 		display: block;
 		margin: 0 auto;
 	}
 }
 
-.sgl-pg-content-else {
+.sgl-pg-content {
 	p {
-		margin-left: 6em;
-		margin-right: 6em;
+		font-size: 17px;
+		letter-spacing: 2px;
+		line-height: 30px;
 	}
 }
 
-@media ( min-width: 320px ) {
-	.sgl-pg-img {
-		img {
-			width: 100%;
-		}
+.sgl-pg-content-else {
+	padding: 0px 60px 40px 60px;
+
+	p {
+		font-size: 17px;
+		letter-spacing: 2px;
+		line-height: 25px;
 	}
 }
+

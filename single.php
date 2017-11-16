@@ -5,62 +5,66 @@
 
 get_header(); ?>
 
-	<div id="nav-change" class="container">
+<div id="nav-change">
 
-		<div class="row">
+<section class="single-page">
 
-			<div class="col-md-12">
+	<div class="container">
 
-				<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-						<div class="page-header">
+					<div class="page-header">
 
-							<h1><?php the_title(); ?></h1>
+						<h1><?php the_title(); ?></h1>
 
-						</div><!-- end page-header -->
+					</div><!-- end page-header -->
 
-						<?php if ( has_post_thumbnail() ) { ?>
+					<?php if ( has_post_thumbnail() ) { ?>
 
-							<div class="col-md-6">
+						<div class="col-sm-6">
 
-								<div class="sgl-pg-img">
+							<div class="sgl-pg-img">
 
-									<?php the_post_thumbnail(); ?>
+								<?php the_post_thumbnail(); ?>
 
-								</div><!-- end sgl-pg-img -->
+							</div><!-- .sgl-pg-img -->
 
-							</div><!-- end col-md-6 -->
+						</div><!-- .col-sm-6 -->
 
-							<div class="col-md-6">
+						<div class="col-sm-6">
+
+							<div class="sgl-pg-content">
 
 								<p><?php the_content(); ?></p>
 
-							</div><!-- end col-md-6 -->
+							</div><!-- .sgl-pg-content -->
 
-						<?php } else { ?>
+						</div><!-- .col-sm-6 -->
 
-							<div class="col-md-12">
+					<?php } else { ?>
 
-								<div class="sgl-pg-content-else">
+						<div class="col-sm-12">
 
-									<p><?php the_content(); ?></p>
+							<div class="sgl-pg-content-else">
 
-								</div><!-- end sgl-pg-content-else -->
+								<p><?php the_content(); ?></p>
 
-							</div><!-- end col-md-12 -->
+							</div><!-- .sgl-pg-content-else -->
 
-						<?php } ?>
+						</div><!-- .col-sm-12 -->
 
-					<?php endwhile; ?>
+					<?php } ?>
 
-				<?php endif; ?>
+				<?php endwhile; ?>
 
-			</div><!-- end col-md-12 -->
-
-		</div><!-- end row -->
+			<?php endif; ?>
 
 	</div><!-- end container -->
+
+</section>
+
+</div><!-- #nav-change -->
 
 <?php get_footer(); ?>

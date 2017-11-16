@@ -1,8 +1,8 @@
 .section-one {
-	margin-top: -25px;
+	margin-top: -15px;
 
 	@media ( min-width: 768px ) {
-		margin-top: -20px;
+		margin-top: 28px;
 	}
 }
 
@@ -97,13 +97,17 @@
 	padding-bottom: 2em;
 
 	@media ( min-width: 768px ) {
-		padding-top: 9em;
+		padding-top: 6em;
 		padding-bottom: 2em;
 	}
 
 	img {
+		width: 200px;
+		height: 200px;
+		border-radius: 4px;
 		display: block;
 		margin: 0 auto;
+		box-shadow: 3px 3px 6px #524a39;
 	}
 
 	h2 {

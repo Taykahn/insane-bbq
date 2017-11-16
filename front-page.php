@@ -25,7 +25,7 @@ $post_id = $post->ID; ?>
 
 					<div id="button" class="button-1">
 
-						<a href="http://localhost:3000/catering/"<button type="button" class="btn btn-red">Learn More</button></a>
+						<a href="http://localhost:3000/contact/"<button type="button" class="btn btn-red">Call Now</button></a>
 
 					</div><!-- .button -->
 

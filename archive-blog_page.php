@@ -30,9 +30,9 @@ $blog = new WP_Query( $query );
 
 	<div class="inner-wrapper container">
 
-		<div class="col-md-12">
+		<div class="col-sm-12">
 
-			<div class="row blog-content">
+			<div class="blog-page">
 
 				<div class="blog-pg-title">
 
@@ -56,7 +56,11 @@ $blog = new WP_Query( $query );
 
 						</div><!-- end blog-img -->
 
-						<p><?php the_content(); ?></p><hr>
+						<div class="blog-content">
+
+							<p><?php the_content(); ?></p><hr>
+
+						</div><!-- .blog-content -->
 
 					<?php endwhile ?>
 
@@ -68,12 +72,12 @@ $blog = new WP_Query( $query );
 
 				<?php endif; wp_reset_postdata() ?>
 
-			</div><!--.blog-content-->
+			</div><!--.blog-page -->
 
-		</div><!-- end col-md-12 -->
+		</div><!-- .col-sm-12 -->
 
-	</div><!-- end inner-wrapper container -->
+	</div><!-- .inner-wrapper .container -->
 
-</section><!-- end two-column row max no-pad -->
+</section><!-- #nav-change .two-column .row .max .no-pad -->
 
 <?php get_footer(); ?>

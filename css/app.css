@@ -121,14 +121,15 @@ ul {
        -o-background-size: cover;
           background-size: cover; }
 
-.blog-navigation ul {
-  display: -webkit-inline-box;
-  padding: 10px; }
-
-.blog-navigation li {
-  padding-right: 5px;
-  padding-left: 5px;
-  list-style: none; }
+.blog-navigation {
+  margin-left: -26px; }
+  .blog-navigation ul {
+    display: -webkit-inline-box;
+    padding: 10px; }
+  .blog-navigation li {
+    padding-right: 5px;
+    padding-left: 5px;
+    list-style: none; }
 
 @media (min-width: 768px) {
   body {
@@ -255,6 +256,9 @@ ul {
 .navbar-header img {
   display: none; }
 
+#logo {
+  padding-left: 46px; }
+
 .navbar-fixed-top {
   top: -5px; }
 
@@ -314,20 +318,6 @@ ul {
   font-size: 25px;
   font-weight: bold; }
 
-.navbar-inverse
-.navbar-nav > li > a {
-  color: #f5f5f5;
-  font-size: 20px;
-  font-weight: 800;
-  position: relative;
-  color: #fff;
-  display: inline-block;
-  line-height: 1;
-  border-bottom: 1px solid transparent;
-  font-weight: bold;
-  padding-top: 4px;
-  padding-bottom: 4px; }
-
 #menu-menu-1 {
   top: 10px;
   font-family: "Oswald", "Special Elite", "sans-serif";
@@ -372,8 +362,6 @@ ul {
   border-color: rgba(231, 231, 231, 0); }
 
 @media (min-width: 320px) {
-  .navbar-fixed-top .navbar-collapse {
-    padding-bottom: 20px; }
   .navbar-collapse {
     margin-top: -5.4em; } }
 
@@ -382,9 +370,7 @@ ul {
     display: block;
     padding-bottom: 1px; }
   .navbar-header img {
-    padding-top: 20px;
     display: block;
-    width: 13em;
     padding-left: 2em; }
   .navbar-default .navbar-collapse {
     border-color: transparent;
@@ -393,7 +379,7 @@ ul {
 .navbar-nav {
     display: inline-block;
     float: right;
-    padding-top: 6.5em;
+    padding-top: 8.5em;
     padding-right: 2em; }
   .navbar-nav {
     margin: 0px 0px; }
@@ -423,7 +409,7 @@ ul {
   text-shadow: 0px 2px 6px #000; }
   @media (min-width: 769px) {
     #menu-menu-2 {
-      padding-left: 47px; } }
+      padding-left: 60px; } }
   @media (min-width: 780px) {
     #menu-menu-2 #menu-menu-2 {
       padding-left: 2em; } }
@@ -442,10 +428,11 @@ ul {
   word-spacing: 1px; }
   @media (min-width: 768px) {
     #slogan p {
-      margin-top: 48px; } }
-  @media (min-width: 769px) {
+      margin-top: 48px;
+      padding-right: 60px; } }
+  @media (min-width: 790px) {
     #slogan p {
-      margin-left: 1em; } }
+      text-align: right; } }
 
 .bottomMenu {
   display: block;
@@ -600,10 +587,10 @@ ul {
   margin: 0 auto; }
 
 .section-one {
-  margin-top: -25px; }
+  margin-top: -15px; }
   @media (min-width: 768px) {
     .section-one {
-      margin-top: -20px; } }
+      margin-top: 28px; } }
 
 .section-two {
   margin-top: 10px; }
@@ -675,13 +662,21 @@ ul {
     .fp-col-one,
     .fp-col-two,
     .fp-col-three {
-      padding-top: 9em;
+      padding-top: 6em;
       padding-bottom: 2em; } }
   .fp-col-one img,
   .fp-col-two img,
   .fp-col-three img {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-box-shadow: 3px 3px 6px #524a39;
+       -moz-box-shadow: 3px 3px 6px #524a39;
+            box-shadow: 3px 3px 6px #524a39; }
   .fp-col-one h2,
   .fp-col-two h2,
   .fp-col-three h2 {
@@ -741,15 +736,17 @@ ul {
   .front, .back {
     height: 53em; } }
 
+.blog-page {
+  padding: 60px; }
+
 .blog-pg-title h1 {
   text-align: center;
   border-bottom: solid; }
 
-.blog-content {
-  margin-top: 4em;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 10em; }
+.blog-content p {
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 25px; }
 
 @media (min-width: 320px) {
   .blog-img img {
@@ -829,6 +826,9 @@ ul {
     line-height: 25px;
     color: #000; }
 
+#menu-page {
+  padding: 0px 60px 0px 60px; }
+
 .menu-title h1 {
   text-align: center;
   font-size: 40px; }
@@ -892,17 +892,26 @@ ul {
       vertical-align: text-bottom;
       padding-right: 4em; } }
 
+.single-page {
+  margin-bottom: 25px; }
+
 .sgl-pg-img img {
+  height: 100%;
+  width: 100%;
   display: block;
   margin: 0 auto; }
 
-.sgl-pg-content-else p {
-  margin-left: 6em;
-  margin-right: 6em; }
+.sgl-pg-content p {
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 30px; }
 
-@media (min-width: 320px) {
-  .sgl-pg-img img {
-    width: 100%; } }
+.sgl-pg-content-else {
+  padding: 0px 60px 40px 60px; }
+  .sgl-pg-content-else p {
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 25px; }
 
 #bk-bizcard {
   background-color: #fcfcfc; }

@@ -12,7 +12,7 @@
 
 			<div class="section-1 container-fluid">
 
-				<div class="col-sm-5">
+				<div class="col-sm-6">
 
 					<div id="footer-nav">
 
@@ -20,19 +20,9 @@
 
 					</div><!-- .footer-nav -->
 
-				</div><!-- .col-sm-5 -->
+				</div><!-- .col-sm-6 -->
 
-				<div class="col-sm-2">
-
-					<div class="footer-logo">
-
-						<img src="<?php the_field( 'footer_logo', 'option' ); ?>" />
-
-					</div><!-- .footer-logo -->
-
-				</div><!-- .col-sm-2 -->
-
-				<div class="col-sm-5">
+				<div class="col-sm-6">
 
 					<div id="slogan">
 
@@ -40,7 +30,7 @@
 
 					</div><!-- .slogan -->
 
-				</div><!-- .col-sm-5 -->
+				</div><!-- .col-sm-6 -->
 
 			</div><!-- .section-1 -->
 
