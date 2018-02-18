@@ -14,11 +14,9 @@ $post_id = $post->ID;
 
 <div id="nav-change">
 
-	<div class="row" id="events-page">
+	<div id="events-page">
 
-		<div class="col-md-12">
-
-			<div class="parallax" style="background-image: url( '<?php the_field( 'event_pg_bkgd_img', $post_id ); ?>' )" />
+		<div class="parallax bkgd-img" style="background-image: url( '<?php the_field( 'event_pg_bkgd_img', $post_id ); ?>' )" />
 
 			<div class="event-pg-content">
 
@@ -34,18 +32,18 @@ $post_id = $post->ID;
 
 						<h3><?php the_sub_field('event_location'); ?></h3>
 
-						<p><?php the_sub_field('event_description'); ?></p><hr>
+						<p><?php the_sub_field('event_description'); ?></p><br>
 
 					<?php endwhile; ?>
 
 				<?php endif; ?>
 
-			</div><!-- end event-pg-content -->
+			</div><!-- .event-pg-content -->
 
-		</div><!-- end col-md-12 -->
+		</div><!-- .parallax .bkgd-img -->
 
-	</div><!-- end row -->
+	</div><!-- #events-page -->
 
-</div><!-- end container -->
+</div><!-- #nav-change -->
 
 <?php get_footer(); ?>

@@ -14,11 +14,17 @@
 
 				<div class="col-sm-6">
 
-					<div id="footer-nav">
+					<div class="bottomMenu">
 
-						<?php include( 'includes/footer-navbar.php' ); ?>
+						<?php 
+							$args = array(
+							'theme_location' => 'footer-menu',
+							'container'      => 'false'
+						);
+							wp_nav_menu( $args );
+						?>
 
-					</div><!-- .footer-nav -->
+					</div><!-- .bottomMenu -->
 
 				</div><!-- .col-sm-6 -->
 

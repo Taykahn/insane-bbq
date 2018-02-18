@@ -7,56 +7,48 @@ get_header(); ?>
 
 	<div id="nav-change" class="container">
 
-		<div class="row">
+		<div class="contact-pg">
 
-			<div class="col-md-12">
+			<?php if ( have_posts() ) : ?>
 
-				<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<div class="contact-pg-header">
 
-						<div class="page-header">
+						<h1><?php the_title(); ?></h1>
 
-							<h1><?php the_title(); ?></h1>
+					</div><!-- .contact-pg-header -->
 
-						</div><!-- end page-header -->
+					<div class="col-sm-6">
 
-						<div class="cnt-pg">
+						<div class="contact-pg-lt-content">
 
-							<div class="col-md-6">
+							<?php the_post_thumbnail(); ?>
 
-								<div class="contact-page-img">
+								<h2>General Info:</h2>
 
-									<?php the_post_thumbnail(); ?>
+								<p><?php the_excerpt(); ?></p>
 
-									<h2>General Info:</h2>
+						</div><!-- .contact-pg-lt-content -->
 
-									<p><?php the_excerpt(); ?></p>
+					</div><!-- col-sm-6 -->
 
-								</div><!-- end page-img -->
+					<div class="col-sm-6">
 
-							</div><!-- col-md-6 -->
+						<div class="contact-content">
 
-							<div class="col-md-6">
+							<p><?php the_content(); ?></p>
 
-								<div class="contact-content">
+						</div><!-- .contact-content -->
 
-									<p><?php the_content(); ?></p>
+					</div><!-- .col-sm-6 -->
 
-								</div><!-- end contact-content -->
+				<?php endwhile; ?>
 
-							</div><!-- end col-md-6 -->
+			<?php endif; ?>
 
-						</div>
+		</div><!-- .contact-pg -->
 
-					<?php endwhile; ?>
-
-				<?php endif; ?>
-
-			</div><!-- end col-md-12 -->
-
-		</div><!-- end row -->
-
-	</div><!-- end container -->
+	</div><!-- #nav-change .container -->
 
 <?php get_footer(); ?>

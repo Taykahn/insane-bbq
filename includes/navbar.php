@@ -18,23 +18,37 @@
 
 				<span></span>
 
-			</button><!-- end navbar-toggle collapsed -->
+			</button><!-- .navbar-toggle .collapsed -->
 
-		</div><!-- end navbar-header -->
+		</div><!-- .navbar-header -->
 
 		<div class="banner-navbar" style="background: url( '<?php the_field( 'navbar_bkgd', 'option' ) ?>' ) 50%/cover no-repeat;">
 
-		<div id="navbar" class="navbar-collapse collapse">
+			<div id="navbar" class="navbar-collapse collapse">
 
-			<?php 
-				$args = array(
-				'menu'          => 'header-menu',
-				'menu_class'    => 'nav navbar-nav',
-				'container'     => 'false'
-			);
-				wp_nav_menu( $args );
-			?>
+				<ul>
 
-		</div><!--/.navbar-collapse -->
+					<li>
 
-</nav><!-- end navbar navbar-inverse navbar-fixed-top -->
+						<?php 
+							$args = array(
+							'menu'          => 'header-menu',
+							'menu_class'    => 'nav navbar-nav',
+							'container'     => 'false'
+						);
+							wp_nav_menu( $args );
+						?>
+
+					</li>
+
+				</ul>
+
+			</div><!-- #navbar .navbar-collapse -->
+
+		</div><!-- .banner-navbar -->
+
+	</div><!-- .conatiner -->
+
+</nav><!-- .navbar .navbar-inverse .navbar-fixed-top -->
+
+

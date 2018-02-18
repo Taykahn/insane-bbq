@@ -1,5 +1,10 @@
 .blog-page {
-	padding: 60px;
+	margin-top: 7em;
+
+	@media ( min-width: 768px ) {
+		margin-top: 10em;
+		padding: 60px;
+	}
 }
 
 .blog-pg-title {

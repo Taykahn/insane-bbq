@@ -1,7 +1,8 @@
-#menu-page {
-	padding: 0px 60px 0px 60px;
+@media ( min-width: 678px ) {
+	#menu-page {
+		padding: 140px 60px 0px 60px;
+	}
 }
-
 .menu-title {
 	h1 {
 		text-align: center;

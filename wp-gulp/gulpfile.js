@@ -77,7 +77,7 @@ gulp.task( 'jsWatch', [ 'minifyScripts' ], browserSync.reload );
 gulp.task( 'watchFiles', function() {
   browserSync({
     proxy: {
-      target: 'http://insane-bbq.dev'
+      target: 'http://insane-bbq.test'
     }
   });
   gulp.watch([ '../scss/**/*.scss' ], [ 'cssWatch' ]);

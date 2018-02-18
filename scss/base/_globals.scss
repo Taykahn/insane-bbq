@@ -1,7 +1,6 @@
 /* Globals ----------- */
 
 body {
-	min-width:320px;
 	line-height:20px;
 	font-family: $secondaryFont;
 	-webkit-font-smoothing: antialiased;
@@ -31,12 +30,21 @@ ul {
 	list-style: none;
 }
 
-.parallax { 
-	min-height: 500px; 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+@media ( min-width: 1025px ) {
+	.parallax { 
+		min-height: 500px; 
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.bkgd-img {
+		min-height: 525px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 }
 
 .parallax-br {
@@ -59,11 +67,3 @@ ul {
 		list-style: none;
 	}
 }
-
-
-@media ( min-width: 768px ) {
-	body {
-		padding-top: 9.8em;
-	}
-}
-

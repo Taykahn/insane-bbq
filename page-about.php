@@ -5,54 +5,42 @@
 
 get_header(); ?>
 
-	<div id="nav-change" class="container">
+	<div id="nav-change" class="container about-page">
 
-		<div class="row">
+		<?php if ( have_posts() ) : ?>
 
-			<div class="col-md-12">
+			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php if ( have_posts() ) : ?>
+				<div class="about-header">
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<h1><?php the_title(); ?></h1>
 
-						<div class="about-header">
+				</div><!-- .about-header --><hr>
 
-							<h1><?php the_title(); ?></h1>
+				<div class="col-sm-6">
 
-						</div><!-- end about-header --><hr>
+					<div class="about-img">
 
-						<div class="about-container">
+						<?php the_post_thumbnail(); ?>
 
-							<div class="col-md-6">
+					</div><!-- end page-img -->
 
-								<div class="about-img">
+				</div><!-- .col-sm-6 -->
 
-									<?php the_post_thumbnail(); ?>
+				<div class="col-sm-6">
 
-								</div><!-- end page-img -->
+					<div class="about-content">
 
-							</div><!-- end col-md-6 -->
+						<p><?php the_content(); ?></p>
 
-							<div class="col-md-6">
+					</div><!-- .about-content -->
 
-								<div class="about-content">
+				</div><!-- .col-sm-6 -->
 
-									<p><?php the_content(); ?></p>
+			<?php endwhile; ?>
 
-								</div><!-- end about-content -->
+		<?php endif; ?>
 
-							</div><!-- end col-md-6 -->
-
-						</div><!-- end container -->
-
-					<?php endwhile; ?>
-
-				<?php endif; ?>
-
-			</div><!-- end col-md-12 -->
-
-		</div><!-- end row -->
-
-	</div><!-- end container --><hr>
+	</div><!-- #nav-change .container .about-page -->
 
 <?php get_footer(); ?>

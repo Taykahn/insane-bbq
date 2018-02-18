@@ -11,31 +11,33 @@ $post_id = $post->ID; ?>
 
 <?php include( 'includes/mobile-header.php' ); ?>
 
+<wrapper id="nav-change">
+
 	<section class="section-one container-fluid">
 
-		<div class="col-sm-8 container-fluid">
+		<div class="col-sm-7 container-fluid">
 
 			<div class="banner" style="background: url( '<?php the_field( 'sec_ra_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
 				<div id="fs-sec-one-a">
 
-					<h2><?php the_field( 'sec_ra_title', $post_id ); ?></h2>
+					<!--<h2>< ? php the_field( 'sec_ra_title', $post_id ); ?></h2>-->
 
 					<p><?php the_field( 'sec_ra_content', $post_id ); ?></p>
 
-					<div id="button" class="button-1">
+					<div id="button" class="button-1 flex">
 
-						<a href="http://localhost:3000/contact/"<button type="button" class="btn btn-red">Call Now</button></a>
+						<a href="http://localhost:3000/contact/"<button type="button" class="btn btn-red">call now</button></a>
 
 					</div><!-- .button -->
 
-				</div><!-- .fs-sec-one-a -->
+				</div><!-- #fs-sec-one-a -->
 
 			</div><!-- .banner -->
 
-		</div><!-- .col-sm-8 .container-fluid -->
+		</div><!-- .col-sm-7 -->
 
-		<div id="nav-change" class="col-sm-4 container-fluid">
+		<div class="col-sm-5 container-fluid">
 
 			<div class="banner" style="background: url( '<?php the_field( 'sec_lb_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
@@ -47,17 +49,15 @@ $post_id = $post->ID; ?>
 
 					<div id="button" class="button-2">
 
-						<a href="http://localhost:3000/menu/"<button type="button" class="btn btn-red">Our Menu</button></a>
+						<a href="http://localhost:3000/menu/"<button type="button" class="btn btn-red">our menu</button></a>
 
 					</div><!-- .button -->
 
-					</div><!-- .sec-one-b-content -->
+				</div><!-- .sec-one-b-content --> 
 
-				</div><!-- .banner -->
+			</div><!-- .banner -->
 
-			</div><!-- .col-sm-4 -->
-
-		</div><!-- .col-md-12 -->
+		</div><!-- .col-sm-5 -->
 
 	</section><!-- .section-one row no-pad container-fluid -->
 
@@ -65,7 +65,7 @@ $post_id = $post->ID; ?>
 
 		<div class="container-fluid">
 
-			<div class="parallax" style="background-image: url('<?php the_field( 'sec_five_bkgd_img', $post_id ) ?>')">
+			<div class="parallax bkgd-img" style="background-image: url('<?php the_field( 'sec_five_bkgd_img', $post_id ) ?>')">
 
 				<div class="col-sm-4 container-fluid">
 
@@ -115,7 +115,7 @@ $post_id = $post->ID; ?>
 
 	<section class="section-three no-pad container-fluid">
 
-		<div class="col-sm-4 container-fluid">
+		<div class="col-sm-5 container-fluid">
 
 			<div class="banner" style="background: url( '<?php the_field( 'sec_3_lb_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
@@ -127,7 +127,7 @@ $post_id = $post->ID; ?>
 
 					<div id="button" class="button-3">
 
-						<a href="http://localhost:3000/event/"<button type="button" class="btn btn-red">Where We Are</button></a>
+						<a href="http://localhost:3000/event/"<button type="button" class="btn btn-red">where we are</button></a>
 
 					</div><!-- .button -->
 
@@ -137,7 +137,7 @@ $post_id = $post->ID; ?>
 
 		</div><!-- .col-sm-4 -->
 
-		<div class="col-sm-8 container-fluid">
+		<div class="col-sm-7 container-fluid">
 
 			<div class="banner" style="background: url( '<?php the_field( 'sec_3_ra_bkgd_img', $post_id ) ?>' ) 50%/cover no-repeat;">
 
@@ -149,7 +149,7 @@ $post_id = $post->ID; ?>
 
 					<div id="button" class="button-4">
 
-						<a href="http://localhost:3000/shop/"<button type="button" class="btn btn-red">The Store</button></a>
+						<a href="http://localhost:3000/shop/"<button type="button" class="btn btn-red">the store</button></a>
 
 					</div><!-- .button -->
 
@@ -160,6 +160,8 @@ $post_id = $post->ID; ?>
 		</div><!-- .col-sm-8 -->
 
 	</section><!-- .section-three row no-pad container-fluid -->
+
+</wrapper><!-- #nav-change -->
 
 <?php get_footer(); ?>
 

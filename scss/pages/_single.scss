@@ -1,4 +1,10 @@
 .single-page {
+	margin-top: 2em;
+
+	@media ( min-width: 768px ) {
+		margin-top: 10em;
+	}
+
 	margin-bottom: 25px;
 }
 
@@ -20,7 +26,10 @@
 }
 
 .sgl-pg-content-else {
-	padding: 0px 60px 40px 60px;
+	min-height: 500px;
+	@media ( min-width: 768px ) {
+		padding: 0px 60px 40px 60px;
+	}
 
 	p {
 		font-size: 17px;
